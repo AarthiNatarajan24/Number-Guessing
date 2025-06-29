@@ -1,0 +1,21 @@
+Understand the Code Structure:
+The code uses the random module to generate a random number between 1 and 100.
+The game runs in a loop, allowing up to 10 attempts.
+It handles invalid inputs (e.g., non-numeric inputs) using a try-except block.
+Feedback is given after each guess (too high, too low, or correct).
+The game ends when the user guesses correctly or runs out of attempts.
+Difficulty Levels:
+Added a choose_difficulty() function that lets the user select from:
+Easy: Numbers 1-50, 15 attempts.
+Medium: Numbers 1-100, 10 attempts.
+Hard: Numbers 1-200, 7 attempts.
+The function returns the range (max_number), attempts (max_attempts), and difficulty name.
+Play-Again Option:
+After each game (win or lose), the user is prompted to play again.
+Entering "yes" restarts the game with a new difficulty selection; any other input ends the game.
+Scoring System:
+Added a calculate_score() function that computes a score based on:
+Remaining attempts: (remaining / max_attempts) * 1000.
+Range bonus: (200 / max_number) * 100 (smaller ranges give higher bonuses).
+The score is rounded to a whole number and displayed on a win.
+A score of 0 is given if the user runs out of attempts.
